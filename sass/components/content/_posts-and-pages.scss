@@ -248,7 +248,19 @@
 }
 
 .shoph3 h3 {
-    font-size: 20px;
+    font-size: 24px;
     text-align: center;
     letter-spacing: 3px;
+    font-weight: 500;
+}
+
+.shoph2,
+.shoph3,
+.shopunderline,
+.shopbydeb {
+    margin-bottom: 0!important;
+}
+
+.shopbydeb p {
+    margin-top: 0;
 }
