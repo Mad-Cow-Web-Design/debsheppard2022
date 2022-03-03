@@ -1,0 +1,322 @@
+/*!
+Theme Name: Deb Sheppard
+Theme URI: http://underscores.me/
+Author: Mad Cow Web Design
+Author URI:
+Description: Description
+Version: 1.0.0
+Tested up to: 5.4
+Requires PHP: 5.6
+License: GNU General Public License v2 or later
+License URI: LICENSE
+Text Domain: debsheppard
+Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned.
+
+Deb Sheppard is based on Underscores https://underscores.me/, (C) 2012-2020 Automattic, Inc.
+Underscores is distributed under the terms of the GNU GPL v2 or later.
+
+Normalizing styles have been helped along thanks to the fine work of
+Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
+*/
+
+
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+# Generic
+	- Normalize
+	- Box sizing
+# Base
+	- Typography
+	- Elements
+	- Links
+	- Forms
+## Layouts
+# Components
+	- Navigation
+	- Posts and pages
+	- Comments
+	- Widgets
+	- Media
+	- Captions
+	- Galleries
+# plugins
+	- Jetpack infinite scroll
+# Utilities
+	- Accessibility
+	- Alignments
+# WooCommerce
+# Mad Cow Web Styles
+
+--------------------------------------------------------------*/
+
+@use "sass:list";
+@use "sass:math";
+// Import variables and mixins.
+@import "abstracts/abstracts";
+
+/*--------------------------------------------------------------
+# Generic
+--------------------------------------------------------------*/
+
+
+/* Normalize
+--------------------------------------------- */
+
+@import "generic/normalize";
+
+/* Box sizing
+--------------------------------------------- */
+
+@import "generic/box-sizing";
+
+/*--------------------------------------------------------------
+# Base
+--------------------------------------------------------------*/
+
+@import "base/base";
+
+/*--------------------------------------------------------------
+# Layouts
+--------------------------------------------------------------*/
+
+@import "layouts/gravity-forms";
+// @import "layouts/content-sidebar"; // Uncomment this line for a sidebar on right side of your content.
+// @import "layouts/sidebar-content"; // Uncomment this line for a sidebar on left side of your content.
+
+/*--------------------------------------------------------------
+# Components
+--------------------------------------------------------------*/
+
+@import "components/components";
+
+/*--------------------------------------------------------------
+# Plugins
+--------------------------------------------------------------*/
+
+
+/* Jetpack infinite scroll
+--------------------------------------------- */
+
+@import "plugins/jetpack/infinite-scroll";
+
+/*--------------------------------------------------------------
+# Utilities
+--------------------------------------------------------------*/
+
+
+/* Accessibility
+--------------------------------------------- */
+
+@import "utilities/accessibility";
+
+/* Alignments
+--------------------------------------------- */
+
+@import "utilities/alignments";
+
+/* Header
+--------------------------------------------- */
+
+@import "generic/header";
+
+/* Header
+--------------------------------------------- */
+
+@import "woocommerce";
+
+/* Custom Mad Cow Web Styles
+--------------------------------------------- */
+
+html {
+    scroll-behavior: smooth;
+}
+
+// Home Form
+#mc4wp-form-1 input[type="submit"] {
+    display: inline-block;
+    background: #2a2a2a !important;
+    color: #fff !important;
+    font-size: 0.75em;
+    padding: 8px 22px 8px !important;
+    font-weight: 700;
+    line-height: 1.8em;
+    text-decoration: none;
+    position: relative;
+    cursor: pointer;
+    margin: 0 3px 0 0;
+    -webkit-appearance: none;
+    -webkit-transition: 0.2s ease;
+    -moz-transition: 0.2s ease;
+    -o-transition: 0.2s ease;
+    transition: 0.2s ease;
+    text-transform: uppercase;
+    -moz-border-radius: 25px !important;
+    -webkit-border-radius: 25px !important;
+    border-radius: 25px !important;
+    border: none !important;
+}
+
+// Fixes 4 videos on Videos Page
+.yotu-column-4 li {
+    width: 24% !important;
+}
+
+// Testimonial Sliders
+.owl-carousel {
+    .owl-item {
+        display: flex;
+        align-items: center;
+        min-height: 300px !important;
+        color: #392745;
+        img {
+            width: 120px !important;
+            margin: 0 auto;
+            border-radius: 50%;
+        }
+        .item-content p {
+            font-family: "Chaparral Pro";
+            font-size: 20px;
+        }
+    }
+}
+
+button[type="submit"] {
+    display: inline-block;
+    -webkit-transition: all 200ms ease-in-out;
+    -moz-transition: all 200ms ease-in-out;
+    -o-transition: all 200ms ease-in-out;
+    transition: all 200ms ease-in-out;
+    font-size: 12px;
+    padding: 13px 31px 13px 31px;
+    text-align: center !important;
+    vertical-align: middle;
+    background-image: none;
+    border-radius: 2px;
+    outline: none;
+    white-space: nowrap;
+    -webkit-text-stroke: 0px;
+    width: auto;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    cursor: pointer;
+    -webkit-font-smoothing: antialiased;
+    font-family: Arial;
+    border: 2px solid;
+}
+
+.product_list_widget li {
+    color: #191919;
+    img {
+        width: 42px !important;
+        height: auto;
+        display: block;
+        float: left !important;
+        margin-right: 12px;
+        margin-top: 4px;
+    }
+    .product-title {
+        font-size: 16px;
+        font-family: "Open Sans", sans-serif;
+        font-weight: 700;
+        color: #191919;
+    }
+    .woocommerce-Price-amount {
+        font-size: 14px;
+    }
+}
+
+// WooCommerce Cart Page
+.coupon #coupon_code {
+    width: 360px;
+    padding: 10px 15px;
+}
+
+.woocommerce .cart-collaterals .cart_totals,
+.woocommerce-page .cart-collaterals .cart_totals {
+    float: none;
+    width: 48%;
+}
+
+#add_payment_method table.cart img,
+.woocommerce-cart table.cart img,
+.woocommerce-checkout table.cart img {
+    width: 60px;
+    box-shadow: none;
+}
+
+.quantity .input-text {
+    float: left;
+    width: 40px;
+    border: none;
+    border-radius: 0;
+    height: 45px;
+    padding: 0 10px;
+    margin: 0;
+    background: #f9f9f9;
+}
+
+// Scroll to Top button
+#myBtn {
+    transition: bottom 0.5s;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    /* Fixed/sticky position */
+    bottom: 80px;
+    /* Place the button at the bottom of the page */
+    right: 30px;
+    /* Place the button 30px from the right */
+    z-index: 99;
+    /* Make sure it does not overlap */
+    border: none;
+    /* Remove borders */
+    outline: none;
+    /* Remove outline */
+    background-color: $gold;
+    /* Set a background color */
+    color: $purple-text;
+    /* Text color */
+    cursor: pointer;
+    /* Add a mouse pointer on hover */
+    padding: 15px;
+    /* Some padding */
+    border-radius: 10px;
+    /* Rounded corners */
+    font-size: 14px;
+    /* Increase font size */
+    &:hover {
+        background-color: #555;
+        /* Add a dark-grey background on hover */
+    }
+}
+
+// Speaking page - poly shapes
+#poly-top {
+    clip-path: polygon(50% 0%, 100% 100%, 0% 100%);
+}
+
+#poly-bottom {
+    clip-path: polygon(100% 0%, 50% 100%, 0% 0%);
+}
+
+// Testimonials page - center youtube video
+#testimonials-center-section {
+    text-align: center;
+}
+
+// Events page - header video
+.video-header-overlay .vc_video-bg::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.5);
+}

@@ -1,0 +1,56 @@
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="password"],
+input[type="search"],
+input[type="number"],
+input[type="tel"],
+input[type="range"],
+input[type="date"],
+input[type="month"],
+input[type="week"],
+input[type="time"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="color"],
+textarea {
+  color: $color__text-input;
+  border: 1px solid rgba(0, 0, 0, 0.18);
+  border-radius: 3px;
+  padding: 10px 15px 10px 15px;
+
+  &:focus {
+    color: $color__text-input-focus;
+  }
+}
+
+select {
+  border: 1px solid $color__border-input;
+}
+
+textarea {
+  width: 100%;
+}
+
+// WooCommerce Sidebar
+input,
+textarea,
+select,
+.seldiv,
+.select2-choice,
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="url"] {
+  display: block;
+  font-size: 14px;
+  line-height: initial;
+  margin: 9px 0px 0px 0px;
+  font-weight: normal;
+  background: rgba(0, 0, 0, 0.03);
+}
+
+input[type="search"] {
+  width: 100%;
+  padding: 15px;
+}

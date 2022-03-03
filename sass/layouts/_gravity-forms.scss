@@ -1,0 +1,92 @@
+//3 days signup
+#gform_wrapper_2,
+#gform_wrapper_8,
+#gform_wrapper_9,
+#gform_wrapper_10 {
+    padding: 10px;
+    margin: 0 auto;
+    .gform_footer.top_label {
+        padding: 0;
+    }
+    .gfield {
+        grid-column: 1 / span 12;
+    }
+    .gform_button {
+        background: $light-purple;
+        color: #fff;
+        font-size: 18px;
+        padding: 8px;
+        font-weight: 400;
+        text-decoration: none;
+        text-transform: uppercase;
+        border-radius: 0;
+        border: none;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+//Free Reading Form Entry
+#gform_wrapper_6 {
+    input {
+        background: #fff;
+    }
+    #input_6_2_3_container {
+        padding-right: 0;
+    }
+    .gform_button {
+        background: #f0d8a5;
+        width: 100%;
+    }
+}
+
+// podcast form
+#gform_wrapper_4 {
+    background: #392745 !important;
+    padding: 20px;
+    .gfield label {
+        color: #fff;
+    }
+    .ginput_container.ginput_container_text {
+        border: 1px solid #fff;
+        input {
+            color: #fff;
+        }
+    }
+    .gform_button {
+        background: #7abfd3;
+        color: #fff;
+        font-size: 0.75em;
+        padding: 8px 22px 8px;
+        font-weight: 700;
+        text-decoration: none;
+        -webkit-appearance: none;
+        -webkit-transition: 0.2s ease;
+        -moz-transition: 0.2s ease;
+        -o-transition: 0.2s ease;
+        transition: 0.2s ease;
+        text-transform: uppercase;
+        -moz-border-radius: 25px;
+        -webkit-border-radius: 25px;
+        border-radius: 25px;
+        border: none;
+    }
+}
+
+//speaking form
+#gform_wrapper_3 {
+    width: 80%;
+    margin: 0 auto;
+    .gform_button {
+        background: #392745;
+        width: 100%;
+        color: #fff;
+    }
+}
+
+// Footer form
+#gform_wrapper_8 .gfield input {
+    color: #fff;
+    opacity: 1;
+}

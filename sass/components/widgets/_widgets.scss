@@ -1,0 +1,74 @@
+.widget {
+  max-width: 1280px;
+  margin: 0 auto !important;
+  padding-bottom: 30px;
+
+  // Make sure select elements fit in widgets.
+  select {
+    max-width: 100%;
+  }
+
+  .widget-title {
+    color: #242424;
+    padding-bottom: 15px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.07);
+    font-size: 16px;
+  }
+
+  // Upcoming Events
+  .tribe-list-widget {
+    padding-left: 0;
+
+    li {
+      list-style: none;
+      padding: 0 1.5rem;
+      margin-bottom: 1.25rem;
+
+      .tribe-event-title {
+        a {
+          color: rgba(0, 0, 0, 1);
+
+          &:hover {
+            color: rgba(0, 0, 0, 0.5);
+          }
+        }
+      }
+
+      .tribe-event-duration {
+        font-size: 14px;
+      }
+    }
+  }
+
+  // Tribe Events Widget Link {
+  .tribe-events-widget-link a {
+    font-size: 15px;
+    color: #7abfd3;
+    text-decoration: none;
+  }
+
+  // Product Categories widget
+  .product-categories {
+    margin: 0 0 0 0;
+    padding: 0px 0 0 0;
+    line-height: 1em;
+    background: none;
+    position: relative;
+    list-style: none;
+
+    li {
+      padding: 9px 0;
+      margin: 0;
+      line-height: 1.2em !important;
+      background: none;
+
+      a {
+        color: rgba(0, 0, 0, 0.5);
+
+        &:hover {
+          color: rgba(0, 0, 0, 1);
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,239 @@
+.enroll-now-button {
+    padding: 15px;
+    display: block;
+    font-size: 22px;
+    text-align: center;
+    color: #392745;
+    background-color: #f1d59d;
+    width: 220px;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+
+.enroll-now-button:hover {
+    background-color: #392745;
+    color: #f1d59d;
+}
+
+.site-main {
+    padding: 0 30px 30px;
+}
+
+.sticky {
+    display: block;
+}
+
+.post,
+.page {
+    margin: 0;
+}
+
+.updated:not(.published) {
+    display: none;
+}
+
+.page-content {
+    max-width: 1140px;
+    margin: 0 auto !important;
+    display: block;
+}
+
+.post-thumbnail,
+.entry-content {
+    max-width: 1280px;
+    margin: 0 auto !important;
+}
+
+.post {
+    .entry-header {
+        text-align: center;
+        margin: 50px auto;
+        padding: 25px 0;
+        background-color: #f5f5f5;
+        .entry-title {
+            margin: 0;
+            font-size: 42px;
+        }
+        .entry-meta {
+            font-size: 14px;
+        }
+    }
+    .entry-content {
+        padding-bottom: 75px;
+        display: flex;
+        flex-direction: row;
+        .layout-1-third {
+            width: 33.33%;
+            padding-left: 50px;
+            .post-thumbnail {
+                width: 100% !important;
+            }
+        }
+        .layout-2-third {
+            width: 66.66%;
+        }
+    }
+}
+
+.page-links {
+    clear: both;
+    margin: 0 0 1.5em;
+}
+
+
+/* BLOG PAGE */
+
+.single-post h1.entry-title {
+    font-size: 4em;
+}
+
+
+/* HOME PAGE */
+
+.start-your-journey .uael-first-text {
+    font-family: "adelia", sans;
+    font-size: 75px;
+}
+
+.start-your-journey h2 {
+    white-space: nowrap;
+}
+
+.start-your-journey .uael-highlight-text {
+    font-family: 'LemonMilklight', sans;
+    font-size: 32.5px;
+}
+
+.im-deb .uael-highlight-text {
+    font-family: "adelia", sans;
+    font-size: 42px;
+}
+
+.online-courses .uael-first-text,
+.mediums-mission .uael-first-text {
+    font-family: "adelia", sans;
+    font-size: 55px;
+}
+
+.online-courses .uael-highlight-text,
+.mediums-mission .uael-highlight-text {
+    font-family: 'LemonMilklight', sans;
+    font-size: 45px;
+}
+
+.book-a-reading-home .uael-first-text {
+    font-family: 'LemonMilklight', sans;
+    font-size: 42px;
+}
+
+.book-a-reading-home .uael-highlight-text {
+    font-family: "adelia", sans;
+    font-size: 65px;
+}
+
+.three-items-home-row {
+    a {
+        &.title-bar {
+            color: #fff;
+            font-weight: 400;
+            text-align: center;
+            background: $purple;
+            width: 100%;
+            display: block;
+            padding: 5px;
+            &:hover {
+                background: $mauve;
+                color: $purple-text;
+            }
+        }
+    }
+}
+
+.three-items-home-row a:hover .title-bar {
+    background-color: $mauve;
+    color: $purple-text;
+}
+
+// THREE DAYS PAGES
+.three-days-header .tdh-first h2 {
+    font-family: "adelia", sans;
+    font-size: 66px;
+}
+
+.three-days-header .tdh-second h2 {
+    font-family: 'LemonMilklight', sans;
+    font-size: 36px;
+}
+
+.three-thank-you .uael-first-text {
+    font-family: "adelia", sans;
+    font-size: 50px;
+}
+
+.three-thank-you .uael-highlight-text {
+    font-family: 'LemonMilklight', sans;
+    font-size: 40px;
+    letter-spacing: 5px;
+}
+
+.script-font.life-changing {
+    h2 {
+        font-family: "adelia", sans!important;
+        font-size: 30px;
+        text-align: center;
+        @media (min-width: 850px) {
+            font-size: 39px;
+            text-align: right;
+        }
+        @media (min-width: 1090px) {
+            font-size: 52px;
+        }
+    }
+    // img {
+    //     position: relative;
+    //     &:after {
+    //         content: "";
+    //         position: absolute;
+    //         left: 0;
+    //         top: 0;
+    //         height: 50px;
+    //         width: 50%;
+    //         border-left: 3px solid #000;
+    //     }
+    // }
+}
+
+.script-font.im-deb h2 {
+    font-family: "adelia", sans!important;
+    font-size: 27px;
+}
+
+.threedays-popup {
+    @media (min-width: 550px) {
+        display: flex;
+    }
+    .three-days-interior {
+        @media (min-width: 850px) {
+            width: 50%;
+        }
+    }
+}
+
+.three-days-list ul {
+    margin: 0 0 1.5em 1em;
+}
+
+
+/* ABOUT PAGE */
+
+.about-my-story {
+    width: 380px;
+    max-width: 380px;
+}
+
+.about-my-story:after {
+    content: url('/wp-content/themes/debsheppard-2021/assets/images/heading-flare.png');
+    position: absolute;
+    top: -20px;
+    right: -130px;
+}

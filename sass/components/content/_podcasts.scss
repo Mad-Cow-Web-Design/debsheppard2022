@@ -1,0 +1,163 @@
+/* PODCAST PAGE */
+
+.vc_custom_1597758421028 {
+    padding: 50px 15px !important;
+}
+
+@media only screen and (min-width: 960px) {
+    .vc_custom_1597758421028 {
+        padding: 75px 15px !important;
+    }
+}
+
+@media only screen and (min-width: 1180px) {
+    .vc_custom_1597758421028 {
+        padding: 100px 15px !important;
+    }
+}
+
+@media only screen and (min-width: 1500px) {
+    .vc_custom_1597758421028 {
+        padding: 130px 15px !important;
+    }
+}
+
+#mc4wp-form-1 {
+    width: 70%;
+    margin: 0 auto;
+}
+
+
+/* PODCAST LAUNCH TEAM PAGE */
+
+.page-id-42917 .nav-holder {
+    display: none;
+}
+
+.all-podcasts .wpb_wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: center;
+}
+
+.all-podcasts .wpb_wrapper .podcast-container {
+    width: 275px;
+    margin: 0 30px 50px;
+}
+
+.all-podcasts .wpb_wrapper .podcast-container h5 {
+    font-weight: bold !important;
+    font-size: 1.5em !important;
+    margin: 0;
+}
+
+.all-podcasts .wpb_wrapper .podcast-container div a:hover img {
+    transform: scale(1.05);
+    overflow: hidden;
+}
+
+.all-podcasts .wpb_wrapper .podcast-container div>a img {
+    display: block;
+    width: 100%;
+    max-width: 275px;
+    height: 275px;
+    margin: 0 auto 20px;
+    transition: transform 0.9s;
+}
+
+.all-podcasts .wpb_wrapper .podcast-container p.date {
+    font-weight: bold !important;
+    margin-bottom: 10px;
+}
+
+.all-podcasts .wpb_wrapper .podcast-container p.excerpt {
+    font-style: italic !important;
+    margin-bottom: 10px;
+}
+
+.all-podcasts .wpb_wrapper .podcast-container a.pod-link:before {
+    content: "";
+    background-image: url("https://www.debsheppard.com/wp-content/uploads/2020/12/arrow2.png");
+    background-size: 30px 30px;
+    height: 30px;
+    width: 30px;
+    display: inline-block;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+.single-podcast .content-main {
+    width: 100%;
+    max-width: 100%;
+}
+
+.single-podcast .podcast-header {
+    margin: 0 auto;
+    display: block;
+}
+
+.single-podcast h2 {
+    font-size: 3.2em;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.single-podcast h5 {
+    margin-bottom: .5em;
+    line-height: 1.3em;
+    font-size: 18px;
+    text-align: center;
+}
+
+.single-podcast .podcast a {
+    -webkit-font-smoothing: antialiased;
+    --wp-admin-theme-color: #007cba;
+    --wp-admin-theme-color-darker-10: #006ba1;
+    --wp-admin-theme-color-darker-20: #005a87;
+    font-style: inherit;
+    margin: 50px auto;
+    display: block;
+    width: 185px;
+    outline: 0;
+    font-family: "Montserrat" !important;
+    font-weight: 300 !important;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    box-sizing: border-box;
+    user-select: none;
+    text-decoration: none;
+    line-height: normal;
+    box-shadow: none;
+    border-radius: 5px;
+    font-size: 16px;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    padding-left: 25px;
+    padding-right: 25px;
+    color: #ffffff;
+    border: none;
+    background-color: #d5b2ac;
+    background-image: linear-gradient(to right, #d5b2ac 0%, #392745 50%, #d5b2ac 100%);
+    transition: all 0.2s ease-in-out;
+    background-size: 200% 100%;
+}
+
+.single-podcast .podcast a:hover {
+    text-decoration: underline;
+}
+
+.single-podcast .podcast-transcript {
+    height: 60px;
+    overflow: scroll;
+    border: 1px solid #392745;
+    padding: 15px;
+}
+
+// .single-post #primary header.main,
+// .single-podcast #primary header.main,
+// .single-post #primary header.main .inner,
+// .single-podcast #primary header.main .inner {
+//     display: block;
+// }

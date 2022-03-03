@@ -1,0 +1,113 @@
+body,
+button,
+input,
+select,
+optgroup,
+textarea {
+    color: $color__text-main;
+    font-family: $font__main;
+    font-size: 1rem;
+    line-height: $font__line-height-body;
+}
+
+@import "headings";
+@import "copy";
+@font-face {
+    font-family: LemonMilk;
+    src: url('/wp-content/themes/debsheppard-2021/assets/fonts/LemonMilk.otf') format("opentype");
+}
+
+@font-face {
+    font-family: LemonMilkbold;
+    src: url('/wp-content/themes/debsheppard-2021/assets/fonts/LemonMilkbold.otf') format("opentype");
+}
+
+@font-face {
+    font-family: LemonMilkbolditalic;
+    src: url('/wp-content/themes/debsheppard-2021/assets/fonts/LemonMilkbolditalic.otf') format("opentype");
+}
+
+@font-face {
+    font-family: LemonMilkitalic;
+    src: url('/wp-content/themes/debsheppard-2021/assets/fonts/LemonMilkitalic.otf') format("opentype");
+}
+
+@font-face {
+    font-family: LemonMilklight;
+    src: url('/wp-content/themes/debsheppard-2021/assets/fonts/LemonMilklight.otf') format("opentype");
+}
+
+@font-face {
+    font-family: LemonMilklightitalic;
+    src: url('/wp-content/themes/debsheppard-2021/assets/fonts/LemonMilklightitalic.otf') format("opentype");
+}
+
+@font-face {
+    font-family: AvenirLTStd-Heavy_0;
+    src: url('/wp-content/themes/debsheppard-2021/assets/fonts/AvenirLTStd-Heavy_0.otf') format("opentype");
+}
+
+@font-face {
+    font-family: AvenirNextLTPro-Bold;
+    src: url('/wp-content/themes/debsheppard-2021/assets/fonts/AvenirNextLTPro-Bold.otf') format("opentype");
+}
+
+@font-face {
+    font-family: AvenirNextLTPro-BoldCn;
+    src: url('/wp-content/themes/debsheppard-2021/assets/fonts/AvenirNextLTPro-BoldCn.otf') format("opentype");
+}
+
+@font-face {
+    font-family: AvenirNextLTPro-Regular;
+    src: url('/wp-content/themes/debsheppard-2021/assets/fonts/AvenirNextLTPro-Regular.otf') format("opentype");
+}
+
+@font-face {
+    font-family: AceSans-Black;
+    src: url('/wp-content/themes/debsheppard-2021/assets/fonts/AceSans-Black.otf') format("opentype");
+}
+
+@font-face {
+    font-family: AceSans-Bold;
+    src: url('/wp-content/themes/debsheppard-2021/assets/fonts/AceSans-Bold.otf') format("opentype");
+}
+
+@font-face {
+    font-family: AceSans-Extrabold;
+    src: url('/wp-content/themes/debsheppard-2021/assets/fonts/AceSans-Extrabold.otf') format("opentype");
+}
+
+@font-face {
+    font-family: AceSans-Extralight;
+    src: url('/wp-content/themes/debsheppard-2021/assets/fonts/AceSans-Extralight.otf') format("opentype");
+}
+
+@font-face {
+    font-family: AceSans-Light;
+    src: url('/wp-content/themes/debsheppard-2021/assets/fonts/AceSans-Light.otf') format("opentype");
+}
+
+@font-face {
+    font-family: AceSans-Medium;
+    src: url('/wp-content/themes/debsheppard-2021/assets/fonts/AceSans-Medium.otf') format("opentype");
+}
+
+@font-face {
+    font-family: AceSans-Thin;
+    src: url('/wp-content/themes/debsheppard-2021/assets/fonts/AceSans-Thin.otf') format("opentype");
+}
+
+@font-face {
+    font-family: AceSans;
+    src: url('/wp-content/themes/debsheppard-2021/assets/fonts/AceSans.otf') format("opentype");
+}
+
+@font-face {
+    font-family: adelia;
+    src: url('/wp-content/themes/debsheppard-2021/assets/fonts/adelia.ttf') format("truetype"), url('/wp-content/themes/debsheppard-2021/assets/fonts/adelia.woff') format('woff');
+}
+
+*[id^="readlink"] {
+    color: #d4b2ab !important;
+    font: bold;
+}
