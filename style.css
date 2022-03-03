@@ -1096,11 +1096,13 @@ input[type=search] {
   font-weight: 500;
 }
 
-.shoph2,
-.shoph3,
 .shopunderline,
 .shopbydeb {
   margin-bottom: 0 !important;
+}
+
+.shoph3 {
+  margin-bottom: -10px !important;
 }
 
 .shopbydeb p {
