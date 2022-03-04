@@ -2,20 +2,43 @@ button,
 input[type="button"],
 input[type="reset"],
 input[type="submit"] {
-	border: 1px solid;
-	border-color: $color__border-button;
-	border-radius: 3px;
-	background: $color__background-button;
-	color: rgba(0, 0, 0, 0.8);
-	line-height: 1;
-	padding: 0.6em 1em 0.4em;
+    border: 1px solid;
+    border-color: $color__border-button;
+    border-radius: 3px;
+    background: $color__background-button;
+    color: rgba(0, 0, 0, 0.8);
+    line-height: 1;
+    padding: 0.6em 1em 0.4em;
+    &:hover {
+        border-color: $color__border-button-hover;
+    }
+    &:active,
+    &:focus {
+        border-color: $color__border-button-focus;
+    }
+}
 
-	&:hover {
-		border-color: $color__border-button-hover;
-	}
-
-	&:active,
-	&:focus {
-		border-color: $color__border-button-focus;
-	}
+button[type="submit"] {
+    display: inline-block;
+    -webkit-transition: all 200ms ease-in-out;
+    -moz-transition: all 200ms ease-in-out;
+    -o-transition: all 200ms ease-in-out;
+    transition: all 200ms ease-in-out;
+    font-size: 12px;
+    padding: 13px 31px 13px 31px;
+    text-align: center !important;
+    vertical-align: middle;
+    background-image: none;
+    border-radius: 2px;
+    outline: none;
+    white-space: nowrap;
+    -webkit-text-stroke: 0px;
+    width: auto;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    cursor: pointer;
+    -webkit-font-smoothing: antialiased;
+    font-family: Arial;
+    border: 2px solid;
 }

@@ -112,16 +112,13 @@ add_action( 'after_setup_theme', 'debsheppard_setup' );
  *
  * @global int $content_width
  */
-function debsheppard_content_width() {
+add_action( 'after_setup_theme', 'debsheppard_content_width', 0 );
+ function debsheppard_content_width() {
 	$GLOBALS['content_width'] = apply_filters( 'debsheppard_content_width', 640 );
 }
-add_action( 'after_setup_theme', 'debsheppard_content_width', 0 );
 
-/**
- * Register widget area.
- *
- * @link https://developer.wordpress.org/themes/functionality/sidebars/#registering-a-sidebar
- */
+
+add_action( 'widgets_init', 'debsheppard_widgets_init' );
 function debsheppard_widgets_init() {
 	register_sidebar(
 		array(
@@ -157,12 +154,14 @@ function debsheppard_widgets_init() {
 		)
 	);
 }
-add_action( 'widgets_init', 'debsheppard_widgets_init' );
+
 
 
 /**
  * Enqueue scripts and styles.
  */
+
+add_action( 'wp_enqueue_scripts', 'debsheppard_scripts' );
 function debsheppard_scripts() {
 	$css_file = get_template_directory() . '/sass/style.scss';
     wp_enqueue_style( 'debsheppard-style', get_stylesheet_uri(), array(), filemtime($css_file) );
@@ -175,7 +174,6 @@ function debsheppard_scripts() {
 		wp_enqueue_script( 'comment-reply' );
 	}
 }
-add_action( 'wp_enqueue_scripts', 'debsheppard_scripts' );
 
 /**
  * Implement the Custom Header feature.
@@ -216,9 +214,8 @@ add_theme_support('woocommerce');
 // Add continue shopping button to cart page
 
 add_action('woocommerce_cart_coupon', 'madcow_continue_shopping');
-function madcow_continue_shopping()
-{
-    echo '<a href="https://www.debsheppard.com/shop/" class="checkout-button button">Continue Shopping</a>';
+function madcow_continue_shopping() {
+    echo '<a href="https://www.debsheppard.com/store/" class="checkout-button button">Continue Shopping</a>';
 }
 
 // add_filter('woocommerce_add_to_cart_redirect', 'madcow_custom_add_to_cart_redirect');
@@ -242,26 +239,20 @@ function madcow_continue_shopping()
 // }
 
 add_action('woocommerce_before_cart_totals', 'madcow_custom_cart_message');
-function madcow_custom_cart_message()
-{
+function madcow_custom_cart_message() {
     $product_id      = 40526;
     $product_cart_id = WC()->cart->generate_cart_id($product_id);
     $in_cart         = WC()->cart->find_product_in_cart($product_cart_id);
 
     if ($in_cart) {
-
         echo '</p>Turn setbacks into triumphs in the 30-Day Energy Shift!<br/><br/>
-
         Weekly transformational video trainings: <strong>$200 value</strong><br/>
         Weekly Group Coaching with ME: <strong>$200 value</strong><br/>
         Daily energy shifting insights and exercises: <strong>$150 value</strong><br/>
         Private Community with like-minded souls: <strong>Priceless</strong><br/><br/>
-
         Total Value: <strong>$550</strong><br/>
         Today Only: <strong>$147</strong> <br/><br/>
-
         Course officially starts June 15!';
-
     }
 }
 
@@ -302,37 +293,44 @@ function madcowweb_register_podcast_cpt() {
 add_action( 'init', 'register_podcast_shortcode');
 function register_podcast_shortcode(){
 	add_shortcode('podcast-posts', 'podcast_posts_function');
- }
+}
 
- function podcast_posts_function() {
-// Set the arguments for the query
-$args = array(
-	'numberposts'		=> -1,
-	'post_type'		=> 'podcast',
-	'orderby' 		=> 'date',
-	'order' 		=> 'DESC',
-	);
+function podcast_posts_function() {
+    // Set the arguments for the query
+    $args = array(
+        'numberposts'		=> -1,
+        'post_type'		=> 'podcast',
+        'orderby' 		=> 'date',
+        'order' 		=> 'DESC',
+        );
 
-$loop = new WP_Query( $args );
+    $loop = new WP_Query( $args );
 
-while ( $loop->have_posts() ) : $loop->the_post(); ?>
-	<div class="podcast-container">
-		<div>
-			<a href="<?php the_permalink() ?>" rel="bookmark" >
-				<?php if (get_field('podcast_image')): ?>
-					<img src="<?php the_field('podcast_image'); ?>">
+    while ( $loop->have_posts() ) : $loop->the_post(); ?>
+        <div class="podcast-container">
+            <div>
+                <a href="<?php the_permalink() ?>" rel="bookmark" >
+                    <?php if (get_field('podcast_image')): ?>
+                        <img src="<?php the_field('podcast_image'); ?>">
 
-					<?php else: ?>
-					<img src="https://www.debsheppard.com/wp-content/uploads/2020/12/podcast-fallback.jpg">
-				<?php endif; ?>
-			</a>
-			<p class="date"><?php the_date(); ?></p>
-			<h5><?php the_title(); ?></h5>
-			<p class="excerpt"><?php the_field('excerpt'); ?></p>
-			<a class="pod-link" href="<?php the_permalink() ?>" rel="bookmark" >Listen to Podcast</a>
-		</div>
-	</div>
-<?php endwhile;
+                        <?php else: ?>
+                        <img src="https://www.debsheppard.com/wp-content/uploads/2020/12/podcast-fallback.jpg">
+                    <?php endif; ?>
+                </a>
+                <p class="date"><?php the_date(); ?></p>
+                <h5><?php the_title(); ?></h5>
+                <p class="excerpt"><?php the_field('excerpt'); ?></p>
+                <a class="pod-link" href="<?php the_permalink() ?>" rel="bookmark" >Listen to Podcast</a>
+            </div>
+        </div>
+    <?php endwhile;
 
-wp_reset_postdata();
+    wp_reset_postdata();
+}
+
+//limit number of cross sells showing on the cart
+add_filter('woocommerce_cross_sells_total', 'madcowCrossSellTotal');
+function madcowCrossSellTotal($total) {
+	$total = '4';
+	return $total;
 }

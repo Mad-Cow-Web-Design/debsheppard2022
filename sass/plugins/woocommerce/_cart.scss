@@ -1,0 +1,58 @@
+.woocommerce-cart {
+    .woocommerce {
+        padding-top: 50px;
+        .cross-sells {
+            width: 100%;
+            .products {
+                .product {
+                    @media (min-width: 769px) {
+                        width: 22%;
+                        margin: 0 10px 20px;
+                        clear: none;
+                    }
+                }
+            }
+        }
+        .coupon {
+            #coupon_code {
+                width: 360px;
+                padding: 15px;
+                margin-top: 3px;
+                @media (max-width: 768px) {
+                    float: none;
+                }
+            }
+            .button {
+                font-family: "Montserrat";
+            }
+        }
+        .cart_totals {
+            float: none;
+            width: 100%;
+        }
+        table.cart {
+            img {
+                width: 60px;
+                box-shadow: none;
+            }
+            .quantity {
+                .input-text {
+                    float: left;
+                    width: 50px;
+                    border: none;
+                    border-radius: 0;
+                    height: 45px;
+                    padding: 0 10px;
+                    margin: 0;
+                    background: #f9f9f9;
+                }
+            }
+        }
+        .button.alt {
+            background-color: $purple-text;
+            &:hover {
+                background-color: $mauve;
+            }
+        }
+    }
+}
