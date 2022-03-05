@@ -1,0 +1,18 @@
+/*
+Theme Name: Deb Sheppard
+
+WooCommerce styles override
+*/
+
+// WooCommerce color variables
+$woocommerce__color-error: #e2401c;
+$woocommerce__color-success: #0f834d;
+$woocommerce__color-info: #3d9cd2;
+// Import variables and mixins
+@import "cart";
+@import "checkout";
+@import "components";
+@import "products";
+@import "single-product";
+@import "tables";
+@import "widgets";
