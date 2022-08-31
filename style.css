@@ -1162,6 +1162,42 @@ input[type=search] {
   margin-bottom: -10px !important;
 }
 
+.gtb-hero-section {
+  background: linear-gradient(0deg, rgb(0, 0, 0) 0%, rgb(0, 0, 0) 40%, rgba(0, 0, 0, 0) 67%);
+  position: relative;
+}
+.gtb-hero-section:after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, rgb(0, 0, 0) 0%, rgba(0, 0, 0, 0.9) 36%, rgba(0, 0, 0, 0) 57%);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.gtb-watch-button .elementor-text-editor,
+.gtb-subscribe-button .elementor-text-editor {
+  width: 350px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  padding: 14px 30px;
+  background-color: #a400ff;
+}
+
+.gtb-subscribe-button .elementor-text-editor {
+  background-color: #c5a326;
+  padding: 14px 40px;
+}
+.gtb-subscribe-button .elementor-text-editor p {
+  margin: 0;
+}
+.gtb-subscribe-button .elementor-text-editor a {
+  font-weight: 600;
+}
+
 /* Comments
 --------------------------------------------- */
 .comment-content a {
@@ -1197,7 +1233,7 @@ input[type=search] {
   margin-bottom: 1.25rem;
 }
 .widget .tribe-list-widget li .tribe-event-title a {
-  color: black;
+  color: rgb(0, 0, 0);
 }
 .widget .tribe-list-widget li .tribe-event-title a:hover {
   color: rgba(0, 0, 0, 0.5);
@@ -1228,7 +1264,7 @@ input[type=search] {
   color: rgba(0, 0, 0, 0.5);
 }
 .widget .product-categories li a:hover {
-  color: black;
+  color: rgb(0, 0, 0);
 }
 
 /* Media
@@ -1965,7 +2001,7 @@ table.shop_table_responsive tr td {
 }
 #masthead .header-content-wrapper .top-header:before {
   content: "";
-  background: #3c2a4645;
+  background: rgba(60, 42, 70, 0.2705882353);
   height: 2px;
   position: absolute;
   width: 100%;
@@ -2174,8 +2210,8 @@ table.shop_table_responsive tr td {
 }
 #masthead .main-navigation ul li ul {
   position: absolute;
-  background: #3b2945;
-  background: linear-gradient(180deg, #3b2945 60%, rgba(59, 41, 69, 0) 100%);
+  background: rgb(59, 41, 69);
+  background: linear-gradient(180deg, rgb(59, 41, 69) 60%, rgba(59, 41, 69, 0) 100%);
   left: -999em;
   z-index: 99999;
   top: 50px;
