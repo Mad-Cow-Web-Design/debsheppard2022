@@ -1213,10 +1213,11 @@ input[type=search] {
   left: 31%;
   background-repeat: no-repeat;
 }
-.gtb-bottom-section .gtb-bottom-image {
+
+.gtb-bottom-image {
   position: relative;
 }
-.gtb-bottom-section .gtb-bottom-image:after {
+.gtb-bottom-image:after {
   position: absolute;
   content: "";
   width: 100%;
