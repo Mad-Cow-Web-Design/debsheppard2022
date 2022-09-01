@@ -1213,6 +1213,9 @@ input[type=search] {
   left: 31%;
   background-repeat: no-repeat;
 }
+.gtb-bottom-section .gtb-bottom-image {
+  position: relative;
+}
 .gtb-bottom-section .gtb-bottom-image:after {
   position: absolute;
   content: "";
