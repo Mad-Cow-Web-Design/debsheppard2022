@@ -1187,9 +1187,38 @@ input[type=search] {
   background-color: #a400ff;
 }
 
+.gtb-watch-button .elementor-text-editor:hover {
+  background-color: #c5a326;
+}
+
+.gtb-watch-button-top .elementor-text-editor {
+  width: 250px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+
+.gtb-watch-button-top .elementor-text-editor a:nth-of-type(1) img {
+  margin: 0 auto 20px;
+}
+
+.gtb-watch-button-top .elementor-text-editor a:nth-of-type(2) {
+  padding: 10px 30px;
+  background-color: #a400ff;
+  color: #fff;
+}
+.gtb-watch-button-top .elementor-text-editor a:nth-of-type(2):hover {
+  background-color: #c5a326;
+}
+
 .gtb-subscribe-button .elementor-text-editor {
   background-color: #c5a326;
   padding: 14px 40px;
+}
+.gtb-subscribe-button .elementor-text-editor:hover {
+  background-color: #a400ff;
 }
 .gtb-subscribe-button .elementor-text-editor p {
   margin: 0;

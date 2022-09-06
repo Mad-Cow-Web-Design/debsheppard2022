@@ -310,9 +310,38 @@
     background-color: $light-purple;
 }
 
+.gtb-watch-button .elementor-text-editor:hover {
+    background-color: $gold;
+}
+
+.gtb-watch-button-top .elementor-text-editor {
+    width: 250px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+.gtb-watch-button-top .elementor-text-editor a:nth-of-type(1) img {
+    margin: 0 auto 20px;
+}
+
+.gtb-watch-button-top .elementor-text-editor a:nth-of-type(2) {
+    padding: 10px 30px;
+    background-color: $light-purple;
+    color: #fff;
+    &:hover {
+        background-color: $gold;
+    }
+}
+
 .gtb-subscribe-button .elementor-text-editor {
     background-color: $gold;
     padding: 14px 40px;
+    &:hover {
+        background-color: $light-purple;
+    }
     p {
         margin: 0;
     }
