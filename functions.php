@@ -397,11 +397,3 @@ ga('send', 'pageview');
 <noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1021325791862908&ev=PageView&noscript=1"/></noscript>
 <!-- End Meta Pixel Code -->
 <?php }
-
-//add_action('wp_body_open', 'madcowweb_tag_manager_body', 100);
-function madcowweb_tag_manager_body() { ?>
-<!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-XXXXXXX" height="0" width="0"
-        style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
-<?php }
