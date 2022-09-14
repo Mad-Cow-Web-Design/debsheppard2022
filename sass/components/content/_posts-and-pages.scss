@@ -323,14 +323,13 @@
     justify-content: space-between;
 }
 
-.gtb-watch-button-top .elementor-text-editor a:nth-of-type(1) img {
-    margin: 0 auto 20px;
-}
-
-.gtb-watch-button-top .elementor-text-editor a:nth-of-type(2) {
+.gtb-watch-button-top .elementor-text-editor a,
+.gtb-apply-button-mid .elementor-text-editor a {
+    display: block;
     padding: 10px 30px;
     background-color: $light-purple;
     color: #fff;
+    font-weight: 600;
     &:hover {
         background-color: $gold;
     }
@@ -341,6 +340,9 @@
     padding: 14px 40px;
     &:hover {
         background-color: $light-purple;
+        a {
+            color: #fff!important;
+        }
     }
     p {
         margin: 0;
