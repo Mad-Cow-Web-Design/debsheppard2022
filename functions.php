@@ -334,3 +334,66 @@ function madcowCrossSellTotal($total) {
 	$total = '4';
 	return $total;
 }
+
+
+/* ADD GTM TO HEAD AND BELOW OPENING BODY */
+add_action('wp_head', 'madcowweb_ga_snippet', 999);
+function madcowweb_ga_snippet() { ?>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-80905096-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-80905096-1');
+</script>
+
+<!-- End Google Tag Manager -->
+<!-- Facebook Pixel Code -->
+<script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window,document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '1639257369453041');
+    fbq('track', 'PageView');
+    fbq('track', 'ViewContent');
+    fbq('track', 'Lead', {  } );
+</script>
+<noscript>
+    <img height="1" width="1" src="https://www.facebook.com/tr?id=1639257369453041&ev=PageView&noscript=1"/>
+</noscript>
+<!-- End Facebook Pixel Code -->
+<meta name="facebook-domain-verification" content="monb5fl0h7b4gpvl3i261q588uwyoh" />
+<link href="https://use.fontawesome.com/releases/v5.0.1/css/all.css" rel="stylesheet">
+<?php wp_head(); ?>
+    <meta name="facebook-domain-verification" content="900dn288qswhhchlsp66k1svg53nld" />
+<!-- Meta Pixel Code -->
+<script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '1021325791862908');
+    fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1021325791862908&ev=PageView&noscript=1"/></noscript>
+<!-- End Meta Pixel Code -->
+<?php }
+
+add_action('wp_body_open', 'madcowweb_tag_manager_body', 100);
+function madcowweb_tag_manager_body() { ?>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-XXXXXXX" height="0" width="0"
+        style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+<?php }
