@@ -380,7 +380,6 @@ ga('send', 'pageview');
 <!-- End Facebook Pixel Code -->
 <meta name="facebook-domain-verification" content="monb5fl0h7b4gpvl3i261q588uwyoh" />
 <link href="https://use.fontawesome.com/releases/v5.0.1/css/all.css" rel="stylesheet">
-<?php wp_head(); ?>
     <meta name="facebook-domain-verification" content="900dn288qswhhchlsp66k1svg53nld" />
 <!-- Meta Pixel Code -->
 <script>
