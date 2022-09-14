@@ -398,7 +398,7 @@ ga('send', 'pageview');
 <!-- End Meta Pixel Code -->
 <?php }
 
-add_action('wp_body_open', 'madcowweb_tag_manager_body', 100);
+//add_action('wp_body_open', 'madcowweb_tag_manager_body', 100);
 function madcowweb_tag_manager_body() { ?>
 <!-- Google Tag Manager (noscript) -->
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-XXXXXXX" height="0" width="0"
