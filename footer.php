@@ -13,12 +13,12 @@
 <?php if(! is_page ( array(53079,53087) ) ) : ?>
 	<footer id="colophon" class="site-footer" style="background: #fff url('<?php echo get_template_directory_uri().'/assets/images/footer.png'; ?>') center / cover no-repeat;">
         <div class="social">
-            <a href="https://www.facebook.com/DebSheppardPsychicMedium/"><img src="<?php echo get_template_directory_uri().'/assets/images/facebook.png'; ?>" alt=""></a>
-            <a href="https://www.instagram.com/debsheppardpsychicmedium/"><img src="<?php echo get_template_directory_uri().'/assets/images/pinterest2.png'; ?>" alt=""></a>
-            <a href="https://www.linkedin.com/in/debsheppardpsychicmedium/"><img src="<?php echo get_template_directory_uri().'/assets/images/linkedin.png'; ?>" alt=""></a>
-            <a href="https://www.pinterest.com/debsheppard1/"><img src="<?php echo get_template_directory_uri().'/assets/images/pinterest.png'; ?>" alt=""></a>
-            <a href="https://twitter.com/TheDebSheppard"><img src="<?php echo get_template_directory_uri().'/assets/images/twitter.png'; ?>" alt=""></a>
-            <a href="https://www.youtube.com/channel/UCrkSMFGXHmaHj3TGUlWLGIA"><img src="<?php echo get_template_directory_uri().'/assets/images/youtube.png'; ?>" alt=""></a>
+            <a href="https://www.facebook.com/DebSheppardPsychicMedium/" target="_blank"><img src="<?php echo get_template_directory_uri().'/assets/images/facebook.png'; ?>" alt=""></a>
+            <a href="https://www.instagram.com/debsheppardpsychicmedium/" target="_blank"><img src="<?php echo get_template_directory_uri().'/assets/images/pinterest2.png'; ?>" alt=""></a>
+            <a href="https://www.linkedin.com/in/debsheppardpsychicmedium/" target="_blank"><img src="<?php echo get_template_directory_uri().'/assets/images/linkedin.png'; ?>" alt=""></a>
+            <a href="https://www.pinterest.com/debsheppard1/" target="_blank"><img src="<?php echo get_template_directory_uri().'/assets/images/pinterest.png'; ?>" alt=""></a>
+            <a href="https://twitter.com/TheDebSheppard" target="_blank"><img src="<?php echo get_template_directory_uri().'/assets/images/twitter.png'; ?>" alt=""></a>
+            <a href="https://www.youtube.com/channel/UCrkSMFGXHmaHj3TGUlWLGIA" target="_blank"><img src="<?php echo get_template_directory_uri().'/assets/images/youtube.png'; ?>" alt=""></a>
         </div>
         <a href="/" class="mobile-logo"><img src="<?php echo get_template_directory_uri().'/assets/images/footer-logo.png'; ?>" alt=""></a>
         <div class="main-footer-area">
@@ -46,7 +46,7 @@
                     <ul>
                         <li><a href="https://www.debsheppard.com/book/">Book</a></li>
                         <li><a href="https://www.debsheppard.com/product/debs-forever-connected-oracle-cards/">Oracle Cards</a></li>
-                        <li><a href="https://www.debsheppard.com/product-category/malas/">Malas</a></li>
+                        <li><a href="https://www.debsheppard.com/product-category/mala-collection-by-deb-sheppard/">Malas</a></li>
                     </ul>
                 </div>
             </div><!-- left side -->
