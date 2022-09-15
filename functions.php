@@ -297,36 +297,38 @@ function register_podcast_shortcode(){
 }
 
 function podcast_posts_function() {
-    // Set the arguments for the query
-    $args = array(
+    $podcasts = get_posts (array (
         'numberposts'		=> -1,
         'post_type'		=> 'podcast',
         'orderby' 		=> 'date',
         'order' 		=> 'DESC',
-        );
+    ));
 
-    $loop = new WP_Query( $args );
-
-    while ( $loop->have_posts() ) : $loop->the_post(); ?>
-        <div class="podcast-container">
-            <div>
-                <a href="<?php the_permalink() ?>" rel="bookmark" >
-                    <?php if (get_field('podcast_image')): ?>
-                        <img src="<?php the_field('podcast_image'); ?>">
-
-                        <?php else: ?>
-                        <img src="https://www.debsheppard.com/wp-content/uploads/2020/12/podcast-fallback.jpg">
-                    <?php endif; ?>
-                </a>
-                <p class="date"><?php the_date(); ?></p>
-                <h5><?php the_title(); ?></h5>
-                <p class="excerpt"><?php the_field('excerpt'); ?></p>
-                <a class="pod-link" href="<?php the_permalink() ?>" rel="bookmark" >Listen to Podcast</a>
-            </div>
-        </div>
-    <?php endwhile;
-
-    wp_reset_postdata();
+    if ( $podcasts ) :
+        $output = '<div class="all-podcasts">';
+        foreach ( $podcasts as $podcast ) :
+            $podcast_image = get_field ( 'podcast_image', $podcast->ID );
+            $podcast_excerpt = get_field ('excerpt', $podcast->ID );
+            $podcast_date = get_the_date('F j, Y', $podcast->ID);
+            $output .= '<div class="podcast-container">';
+                $output .= '<div>';
+                    $output .= '<a href="' . get_the_permalink($podcast->ID) . '" rel="bookmark" >';
+                        if ($podcast_image) :
+                            $output .= '<img src="' . $podcast_image . '" />';
+                        else :
+                            $output .= '<img src="/wp-content/uploads/2020/12/podcast-fallback.jpg">';
+                        endif;
+                    $output .= '</a>';
+                    $output .= '<p class="date">' . $podcast_date . '</p>';
+                    $output .= '<h5>' . get_the_title($podcast->ID) . '</h5>';
+                    $output .= '<p class="excerpt">' . $podcast_excerpt . '</p>';
+                    $output .= '<a class="pod-link" href="' . get_the_permalink($podcast->ID) . '" rel="bookmark" >Listen to Podcast</a>';
+                $output .= '</div>';
+            $output .= '</div>';
+        endforeach;
+        $output .= '</div><!-- end all podcasts -->';
+    endif;
+    return $output;
 }
 
 function product_cats_function() {

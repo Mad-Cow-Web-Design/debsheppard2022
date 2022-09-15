@@ -1487,30 +1487,30 @@ input[type=search] {
   display: none;
 }
 
-.all-podcasts .wpb_wrapper {
+.all-podcasts {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   align-content: center;
 }
 
-.all-podcasts .wpb_wrapper .podcast-container {
+.all-podcasts .podcast-container {
   width: 275px;
   margin: 0 30px 50px;
 }
 
-.all-podcasts .wpb_wrapper .podcast-container h5 {
+.all-podcasts .podcast-container h5 {
   font-weight: bold !important;
   font-size: 1.5em !important;
   margin: 0;
 }
 
-.all-podcasts .wpb_wrapper .podcast-container div a:hover img {
+.all-podcasts .podcast-container div a:hover img {
   transform: scale(1.05);
   overflow: hidden;
 }
 
-.all-podcasts .wpb_wrapper .podcast-container div > a img {
+.all-podcasts .podcast-container div > a img {
   display: block;
   width: 100%;
   max-width: 275px;
@@ -1519,17 +1519,17 @@ input[type=search] {
   transition: transform 0.9s;
 }
 
-.all-podcasts .wpb_wrapper .podcast-container p.date {
+.all-podcasts .podcast-container p.date {
   font-weight: bold !important;
   margin-bottom: 10px;
 }
 
-.all-podcasts .wpb_wrapper .podcast-container p.excerpt {
+.all-podcasts .podcast-container p.excerpt {
   font-style: italic !important;
   margin-bottom: 10px;
 }
 
-.all-podcasts .wpb_wrapper .podcast-container a.pod-link:before {
+.all-podcasts .podcast-container a.pod-link:before {
   content: "";
   background-image: url("https://www.debsheppard.com/wp-content/uploads/2020/12/arrow2.png");
   background-size: 30px 30px;
