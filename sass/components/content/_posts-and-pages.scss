@@ -96,6 +96,14 @@
 
 /* BLOG PAGE */
 
+.blog-product-cats a {
+    color: rgba(0, 0, 0, 0.5)!important;
+    font-weight: 300;
+    line-height: 1.2;
+    padding: 9px 0;
+    display: block;
+}
+
 .single-post h1.entry-title {
     font-size: 4em;
 }
@@ -287,20 +295,20 @@
 // GRIEVING TO BELIEVING PAGE
 .page-id-58298 {
     background: #000;
-    background-image: linear-gradient(0deg, #3B2945 20%, #000 27%)
+    background-image: linear-gradient(0deg, #3B2945 20%, #000 33%)
 }
 
 @media screen and (min-width: 768px) {
     .page-id-58298 {
         background: #000;
-        background-image: linear-gradient(0deg, #3B2945 27%, #000 34%)
+        background-image: linear-gradient(0deg, #3B2945 24%, #000 36%)
     }
 }
 
 @media screen and (min-width: 1100px) {
     .page-id-58298 {
         background: #000;
-        background-image: linear-gradient(0deg, #3B2945 17%, #000 28%)
+        background-image: linear-gradient(0deg, #3B2945 16%, #000 28%)
     }
 }
 

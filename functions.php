@@ -293,6 +293,7 @@ function madcowweb_register_podcast_cpt() {
 add_action( 'init', 'register_podcast_shortcode');
 function register_podcast_shortcode(){
 	add_shortcode('podcast-posts', 'podcast_posts_function');
+    add_shortcode('product-cats', 'product_cats_function');
 }
 
 function podcast_posts_function() {
@@ -326,6 +327,21 @@ function podcast_posts_function() {
     <?php endwhile;
 
     wp_reset_postdata();
+}
+
+function product_cats_function() {
+    $args = array(
+        'taxonomy'     => 'product_cat',
+        'orderby'      => 'name',
+        'show_count'   => 0,
+        'hide_empty'   => 1
+        );
+
+    $all_categories = get_categories( $args );
+    foreach ($all_categories as $cat) :
+        $category_id = $cat->term_id;
+        echo '<a href="'. get_term_link($cat->slug, 'product_cat') .'">'. $cat->name .'</a>';
+    endforeach;
 }
 
 //limit number of cross sells showing on the cart
