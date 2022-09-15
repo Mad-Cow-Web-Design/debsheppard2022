@@ -1306,6 +1306,15 @@ input[type=search] {
   background-repeat: no-repeat;
 }
 
+.book-reviews .elementor-widget-testimonial-carousel .elementor-main-swiper {
+  height: 550px;
+}
+
+.book-reviews .elementor-widget-testimonial-carousel .swiper-slide {
+  height: 625px;
+  overflow: scroll;
+}
+
 /* Comments
 --------------------------------------------- */
 .comment-content a {
