@@ -206,6 +206,13 @@
                         &:hover {
                             color: $mauve;
                         }
+                        img.gtb-nav {
+                            max-width: 26px;
+                            display: inline-block;
+                            top: 5px;
+                            padding-right: 5px;
+                            position: relative;
+                        }
                     }
                     padding: 0 12px;
                 }

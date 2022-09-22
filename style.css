@@ -2314,6 +2314,13 @@ table.shop_table_responsive tr td {
   #masthead .main-navigation ul li a:hover {
     color: #c868fe;
   }
+  #masthead .main-navigation ul li a img.gtb-nav {
+    max-width: 26px;
+    display: inline-block;
+    top: 5px;
+    padding-right: 5px;
+    position: relative;
+  }
 }
 #masthead .main-navigation ul li#menu-item-18644 .sub-menu, #masthead .main-navigation ul li#menu-item-53950 .sub-menu {
   width: 215px;
