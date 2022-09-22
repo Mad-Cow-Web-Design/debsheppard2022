@@ -2196,7 +2196,7 @@ table.shop_table_responsive tr td {
   flex-flow: column;
   justify-content: center;
 }
-@media (min-width: 768px) {
+@media (min-width: 930px) {
   #masthead .main-navigation {
     flex: 1;
     width: auto;
@@ -2205,7 +2205,7 @@ table.shop_table_responsive tr td {
 #masthead .main-navigation .menu-main-container {
   display: none;
 }
-@media (min-width: 768px) {
+@media (min-width: 930px) {
   #masthead .main-navigation .menu-main-container {
     display: block;
   }
@@ -2213,15 +2213,13 @@ table.shop_table_responsive tr td {
 #masthead .main-navigation .menu-mobile-container {
   display: block;
 }
-@media (min-width: 768px) {
+@media (min-width: 930px) {
   #masthead .main-navigation .menu-mobile-container {
     display: none;
   }
 }
 #masthead .main-navigation.toggled .menu-mobile-container {
-  position: absolute;
-  top: 25%;
-  width: 100%;
+  width: 100vw;
   background: #373438;
   left: 0;
   overflow: scroll;
@@ -2270,7 +2268,7 @@ table.shop_table_responsive tr td {
   font-size: 32px;
   color: #392745;
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 930px) {
   #masthead .main-navigation .menu-toggle {
     display: none;
   }
@@ -2284,7 +2282,7 @@ table.shop_table_responsive tr td {
   padding-left: 0;
   max-width: 1200px;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 930px) {
   #masthead .main-navigation ul {
     display: flex;
   }
@@ -2294,7 +2292,7 @@ table.shop_table_responsive tr td {
   border: none;
   position: relative;
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 930px) {
   #masthead .main-navigation ul li {
     font-size: 10pt;
     padding: 15px 0;
@@ -2307,7 +2305,7 @@ table.shop_table_responsive tr td {
 #masthead .main-navigation ul li a {
   padding: 0 12px;
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 930px) {
   #masthead .main-navigation ul li a {
     color: #fff;
     font-size: 17px;

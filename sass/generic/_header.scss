@@ -103,27 +103,25 @@
         display: flex;
         flex-flow: column;
         justify-content: center;
-        @media (min-width: 768px) {
+        @media (min-width: 930px) {
             flex: 1;
             width: auto;
         }
         .menu-main-container {
             display: none;
-            @media (min-width: 768px) {
+            @media (min-width: 930px) {
                 display: block;
             }
         }
         .menu-mobile-container {
             display: block;
-            @media (min-width: 768px) {
+            @media (min-width: 930px) {
                 display: none;
             }
         }
         &.toggled {
             .menu-mobile-container {
-                position: absolute;
-                top: 25%;
-                width: 100%;
+                width: 100vw;
                 background: #373438;
                 left: 0;
                 overflow: scroll;
@@ -172,7 +170,7 @@
                 font-size: 32px;
                 color: #392745;
             }
-            @media only screen and (min-width: 768px) {
+            @media only screen and (min-width: 930px) {
                 display: none;
             }
         }
@@ -184,14 +182,14 @@
             margin: 0 auto;
             padding-left: 0;
             max-width: 1200px;
-            @media screen and (min-width: 768px) {
+            @media screen and (min-width: 930px) {
                 display: flex;
             }
             li {
                 padding: 15px 20px;
                 border: none;
                 position: relative;
-                @media only screen and (min-width: 768px) {
+                @media only screen and (min-width: 930px) {
                     font-size: 10pt;
                     padding: 15px 0;
                 }
@@ -201,7 +199,7 @@
                     left: auto;
                 }
                 a {
-                    @media only screen and (min-width: 768px) {
+                    @media only screen and (min-width: 930px) {
                         color: #fff;
                         font-size: 17px;
                         font-weight: 500;
