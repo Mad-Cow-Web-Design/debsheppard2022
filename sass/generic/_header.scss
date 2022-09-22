@@ -141,6 +141,13 @@
                             &:hover {
                                 color: #f0d8a5;
                             }
+                            img.gtb-nav {
+                                max-width: 26px;
+                                display: inline-block;
+                                top: 13px;
+                                padding-right: 5px;
+                                position: relative;
+                            }
                         }
                         ul.sub-menu {
                             float: none;
