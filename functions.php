@@ -392,9 +392,9 @@ ga('send', 'pageview');
     fbq('track', 'ViewContent');
     fbq('track', 'Lead', {  } );
 </script>
-<noscript>
+<!-- <noscript>
     <img height="1" width="1" src="https://www.facebook.com/tr?id=1639257369453041&ev=PageView&noscript=1"/>
-</noscript>
+</noscript> -->
 <!-- End Facebook Pixel Code -->
 <meta name="facebook-domain-verification" content="monb5fl0h7b4gpvl3i261q588uwyoh" />
 <link href="https://use.fontawesome.com/releases/v5.0.1/css/all.css" rel="stylesheet">
