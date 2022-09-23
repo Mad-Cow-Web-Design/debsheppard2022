@@ -57,4 +57,7 @@
 
 		</div>
 	</header><!-- #masthead -->
-    <?php endif;
+    <?php
+    echo do_shortcode( '[elementor-template id="58450"]' );
+
+endif;
