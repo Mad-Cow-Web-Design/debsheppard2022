@@ -58,6 +58,6 @@
 		</div>
 	</header><!-- #masthead -->
     <?php
-    echo do_shortcode( '[elementor-template id="58450"]' );
+    echo do_shortcode( '[elementor-template id="58452"]' );
 
 endif;
