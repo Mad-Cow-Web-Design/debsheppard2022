@@ -61,7 +61,7 @@
                 </div>
             </div>   <!-- right side -->
         </div><!-- .main-footer-area -->
-        <a href="https://www.debsheppard.com/policies/">Privacy Policy</a> &#183; <a href="#">Terms & Conditions</a>
+        <a href="https://www.debsheppard.com/policies/">Privacy Policy / Terms & Conditions</a>
 	</footer><!-- footer -->
 </div><!-- #page -->
 
