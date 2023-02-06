@@ -13,3 +13,4 @@ jobs:
       with:
         WPE_SSHG_KEY_PRIVATE: ${{ secrets.WPENGINE_SSH_KEY_PRIVATE }} 
         WPE_ENV: debsheppard
+        REMOTE_PATH: "wp-content/themes/debsheppard-2021/"
